@@ -1,0 +1,176 @@
+{
+  "days": [
+    {
+      "id": "sunday",
+      "label": "Sun · June 14",
+      "fullDate": "Sunday, June 14",
+      "subtitle": "Arrival",
+      "events": [
+        {
+          "time": "All day",
+          "title": "Travel & Arrival",
+          "type": "logistics",
+          "description": "Make your way to Windsor, Connecticut. The Marriott Hartford Windsor Airport runs a complimentary shuttle from Bradley International Airport."
+        }
+      ]
+    },
+    {
+      "id": "monday",
+      "label": "Mon · June 15",
+      "fullDate": "Monday, June 15",
+      "subtitle": "Day One",
+      "events": [
+        {
+          "time": "9:00–10:30",
+          "title": "Registration & Reception",
+          "type": "community",
+          "description": ""
+        },
+        {
+          "time": "11:00–12:30",
+          "title": "Opening Session — Welcome & Introductions",
+          "type": "plenary",
+          "description": ""
+        },
+        {
+          "time": "12:30",
+          "title": "Lunch",
+          "type": "break",
+          "description": "Light lunch provided by Loomis Chaffee."
+        },
+        {
+          "time": "2:00–3:30",
+          "title": "Afternoon Session — Modeling the Three Approaches",
+          "type": "plenary",
+          "description": "An introduction to each of the three strands in action."
+        },
+        {
+          "time": "Afternoon",
+          "title": "Downtime & Reading",
+          "type": "break",
+          "description": ""
+        },
+        {
+          "time": "Evening",
+          "title": "Dinner Together",
+          "type": "community",
+          "description": ""
+        },
+        {
+          "time": "Evening",
+          "title": "Evening Activity (Optional)",
+          "type": "community",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "tuesday",
+      "label": "Tue · June 16",
+      "fullDate": "Tuesday, June 16",
+      "subtitle": "Day Two",
+      "events": [
+        {
+          "time": "9:00–10:30",
+          "title": "Great Books",
+          "type": "great-books",
+          "description": "A great books approach to the history of algorithms and artificial intelligence."
+        },
+        {
+          "time": "11:00–12:30",
+          "title": "Writing-Based Teaching",
+          "type": "writing",
+          "description": "Modeling writing-based teaching practices at the intersections of writing and technology."
+        },
+        {
+          "time": "12:30",
+          "title": "Lunch",
+          "type": "break",
+          "description": "Sandwiches and light fare provided by Loomis Chaffee."
+        },
+        {
+          "time": "2:00–3:30",
+          "title": "Human AI Laboratory | Creative Computing",
+          "type": "creative-lab",
+          "description": "A human-centered, creative laboratory approach to AI."
+        },
+        {
+          "time": "4:00–5:00",
+          "title": "Open Hours | Collaboration | Unconference",
+          "type": "community",
+          "description": ""
+        },
+        {
+          "time": "Evening",
+          "title": "Local Dinner Options",
+          "type": "break",
+          "description": ""
+        },
+        {
+          "time": "Evening",
+          "title": "Evening Activity (Optional)",
+          "type": "community",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "id": "wednesday",
+      "label": "Wed · June 17",
+      "fullDate": "Wednesday, June 17",
+      "subtitle": "Day Three",
+      "events": [
+        {
+          "time": "9:00–10:30",
+          "title": "Human AI Laboratory | Creative Computing",
+          "type": "creative-lab",
+          "description": "A human-centered, creative laboratory approach to AI."
+        },
+        {
+          "time": "11:00–12:30",
+          "title": "Great Books",
+          "type": "great-books",
+          "description": "A great books approach to the history of algorithms and artificial intelligence."
+        },
+        {
+          "time": "12:30",
+          "title": "Lunch",
+          "type": "break",
+          "description": "Light lunch provided by Loomis Chaffee."
+        },
+        {
+          "time": "2:00–3:30",
+          "title": "Writing-Based Teaching",
+          "type": "writing",
+          "description": "Modeling writing-based teaching practices at the intersections of writing and technology."
+        },
+        {
+          "time": "5:00",
+          "title": "Dinner & Celebration",
+          "type": "community",
+          "description": "A closing dinner to celebrate our time together."
+        }
+      ]
+    },
+    {
+      "id": "thursday",
+      "label": "Thu · June 18",
+      "fullDate": "Thursday, June 18",
+      "subtitle": "Departure",
+      "events": [
+        {
+          "time": "Morning",
+          "title": "Breakfast | Gathering | Farewells",
+          "type": "community",
+          "description": "A final morning together before departure."
+        },
+        {
+          "time": "Midday",
+          "title": "Departure",
+          "type": "logistics",
+          "description": "Safe travels. The Marriott shuttle can return you to Bradley International Airport."
+        }
+      ]
+    }
+  ]
+}

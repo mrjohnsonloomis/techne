@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techne &amp; Teaching: Critical Literacies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>body { overflow: hidden; }</style>
+</head>
+<body>
+  <div class="entry-page">
+    <img src="aerial%20fog.jpg" alt="Loomis Chaffee campus at dawn" class="entry-bg">
+    <div class="entry-overlay"></div>
+
+    <div class="entry-card">
+      <span class="eyebrow">Loomis Chaffee &nbsp;·&nbsp; Windsor, CT</span>
+      <h1>Techne &amp; Teaching</h1>
+      <p class="entry-subtitle">Critical Literacies &nbsp;·&nbsp; June 15–18</p>
+      <div class="entry-divider"></div>
+
+      <form id="passphrase-form" novalidate>
+        <label class="passphrase-label" for="passphrase">Enter Passphrase</label>
+        <input
+          type="password"
+          id="passphrase"
+          class="passphrase-input"
+          placeholder="···"
+          autocomplete="current-password"
+          autofocus
+          spellcheck="false"
+        >
+        <p id="passphrase-error" class="passphrase-error">
+          Incorrect passphrase — please try again.
+        </p>
+        <button type="submit" class="entry-btn">Enter</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // Already authenticated? Skip straight to home.
+    if (sessionStorage.getItem('tt_auth') === 'true') {
+      window.location.replace('home.html');
+    }
+
+    var form  = document.getElementById('passphrase-form');
+    var input = document.getElementById('passphrase');
+    var error = document.getElementById('passphrase-error');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (input.value.trim().toLowerCase() === 'techne') {
+        sessionStorage.setItem('tt_auth', 'true');
+        window.location.replace('home.html');
+      } else {
+        error.classList.add('visible');
+        input.value = '';
+        input.focus();
+      }
+    });
+
+    input.addEventListener('input', function () {
+      error.classList.remove('visible');
+    });
+  </script>
+</body>
+</html>

@@ -34,7 +34,7 @@
         },
         {
           "time": "11:00–12:00",
-          "title": "Great Books Intro",
+          "title": "Meno",
           "type": "great-books",
           "description": ""
         },
@@ -84,7 +84,7 @@
       "events": [
         {
           "time": "9:00–10:30",
-          "title": "Great Books: Phaedrus",
+          "title": "Phaedrus",
           "type": "great-books",
           "description": "A great books approach to the history of algorithms and artificial intelligence."
         },
@@ -134,7 +134,7 @@
       "events": [
         {
           "time": "9:00–10:30",
-          "title": "Great Books: al-Khwarizmi",
+          "title": "al-Khwarizmi",
           "type": "great-books",
           "description": "A great books approach to the history of algorithms and artificial intelligence."
         },

@@ -338,6 +338,11 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.85rem); }
 }
 .btn--outline:hover { background: var(--navy); color: var(--white); }
 
+.btn--sm {
+  font-size: 0.75rem;
+  padding: 0.5rem 1rem;
+}
+
 .btn--outline-light {
   background: transparent;
   border-color: rgba(255,255,255,0.45);

@@ -27,14 +27,14 @@
           "description": ""
         },
         {
-          "time": "9:30–10:30",
+          "time": "9:30–10:15",
           "title": "Welcome & Introductions",
           "type": "plenary",
           "description": ""
         },
         {
-          "time": "11:00–12:00",
-          "title": "Meno",
+          "time": "10:30–12:00",
+          "title": "Plato – The Phaedrus",
           "type": "great-books",
           "description": ""
         },
@@ -45,19 +45,19 @@
           "description": "Light lunch provided by Loomis Chaffee."
         },
         {
-          "time": "1:00–2:00",
+          "time": "1:00–2:15",
           "title": "Writing-Based Teaching Intro",
           "type": "writing",
           "description": ""
         },
         {
-          "time": "2:15–3:15",
+          "time": "2:30–3:45",
           "title": "Human AI Lab Intro",
           "type": "creative-lab",
           "description": ""
         },
         {
-          "time": "4:00–5:00",
+          "time": "4:00–5:30",
           "title": "Field Trip — Vintage Radio & Communications Technology Museum",
           "type": "community",
           "description": ""
@@ -84,7 +84,7 @@
       "events": [
         {
           "time": "9:00–10:30",
-          "title": "Phaedrus",
+          "title": "al-Khwarizmi – from The Algebra",
           "type": "great-books",
           "description": ""
         },
@@ -134,7 +134,7 @@
       "events": [
         {
           "time": "9:00–10:30",
-          "title": "al-Khwarizmi",
+          "title": "Wittgenstein – from Philosophical Investigations",
           "type": "great-books",
           "description": ""
         },

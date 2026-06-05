@@ -42,23 +42,23 @@
           "time": "12:00–1:00",
           "title": "Lunch & Reading",
           "type": "break",
-          "description": "Light lunch provided by Loomis Chaffee."
+          "description": "Lunch provided by Loomis Chaffee."
         },
         {
           "time": "1:00–2:15",
-          "title": "Writing-Based Teaching Intro",
+          "title": "Writing-Based Teaching",
           "type": "writing",
           "description": ""
         },
         {
           "time": "2:30–3:45",
-          "title": "Human AI Lab Intro",
+          "title": "Human AI Lab",
           "type": "creative-lab",
           "description": ""
         },
         {
           "time": "4:00–5:30",
-          "title": "Field Trip — Vintage Radio & Communications Technology Museum",
+          "title": "Field Trip",
           "type": "community",
           "description": ""
         },
@@ -98,7 +98,7 @@
           "time": "12:30–2:00",
           "title": "Lunch & Reading",
           "type": "break",
-          "description": "Sandwiches and light fare provided by Loomis Chaffee."
+          "description": "Lunch by Loomis Chaffee."
         },
         {
           "time": "2:00–3:30",
@@ -148,7 +148,7 @@
           "time": "12:30–2:00",
           "title": "Lunch & Reading",
           "type": "break",
-          "description": "Light lunch provided by Loomis Chaffee."
+          "description": "Lunch provided by Loomis Chaffee."
         },
         {
           "time": "2:00–3:30",

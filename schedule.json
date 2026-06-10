@@ -36,7 +36,12 @@
           "time": "10:30–12:00",
           "title": "Plato – The Phaedrus",
           "type": "great-books",
-          "description": ""
+          "location": "",
+          "description": "",
+          "downloads": [
+            { "label": "Cobb Translation", "file": "Phaedrus%20(Plato%2C%20Cobb)%20shorter.pdf" },
+            { "label": "Nehamas Translation", "file": "Phaedrus%20(Plato%2C%20Nehamas)%20shorter.pdf" }
+          ]
         },
         {
           "time": "12:00–1:00",
@@ -92,7 +97,11 @@
           "time": "9:00–10:30",
           "title": "al-Khwarizmi – from The Algebra",
           "type": "great-books",
-          "description": ""
+          "location": "",
+          "description": "",
+          "downloads": [
+            { "label": "Download PDF", "file": "al-Khwarizmi%20from%20The%20Algebra.pdf" }
+          ]
         },
         {
           "time": "11:00–12:30",
@@ -148,7 +157,11 @@
           "time": "9:00–10:30",
           "title": "Wittgenstein – from Philosophical Investigations",
           "type": "great-books",
-          "description": ""
+          "location": "",
+          "description": "",
+          "downloads": [
+            { "label": "Download PDF", "file": "Wittgenstein%2C%20Philosophical%20Investigations%201-43.pdf" }
+          ]
         },
         {
           "time": "11:00–12:30",

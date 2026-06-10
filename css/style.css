@@ -455,6 +455,10 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.85rem); }
 }
 .timeline-event h4 { font-size: 0.97rem; margin-bottom: 0.2rem; }
 .timeline-event p  { font-size: 0.86rem; color: var(--text-muted); line-height: 1.6; }
+.timeline-location { font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-bottom: 0.3rem; }
+.timeline-downloads { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.5rem; }
+.timeline-download-link { font-size: 0.78rem; color: var(--navy); text-decoration: none; border: 1px solid var(--navy); border-radius: 3px; padding: 0.15rem 0.5rem; white-space: nowrap; }
+.timeline-download-link:hover { background: var(--navy); color: #fff; }
 
 .event--plenary      { border-color: var(--navy);     background: rgba(27,42,74,0.05); }
 .event--plenary h4   { color: var(--navy); }

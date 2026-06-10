@@ -39,12 +39,24 @@ function activateTab(dayId) {
 
 function renderPanel(day) {
   var events = day.events.map(function (ev) {
+    var locationHtml = ev.location
+      ? '<p class="timeline-location">' + ev.location + '</p>'
+      : '';
+    var downloadsHtml = (ev.downloads && ev.downloads.length)
+      ? '<div class="timeline-downloads">' +
+          ev.downloads.map(function (d) {
+            return '<a href="' + d.file + '" download class="timeline-download-link">↓ ' + d.label + '</a>';
+          }).join('') +
+        '</div>'
+      : '';
     return (
       '<div class="timeline-item">' +
         '<div class="timeline-time">' + ev.time + '</div>' +
         '<div class="timeline-event event--' + ev.type + '">' +
           '<h4>' + ev.title + '</h4>' +
+          locationHtml +
           (ev.description ? '<p>' + ev.description + '</p>' : '') +
+          downloadsHtml +
         '</div>' +
       '</div>'
     );

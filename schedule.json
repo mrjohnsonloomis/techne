@@ -24,7 +24,7 @@
           "time": "9:00–9:30",
           "title": "Registration",
           "type": "community",
-          "description": ""
+          "description": "We'll meet in Founder's Hall to get oriented. We will have light pastriest, coffee and tea, and fruit."
         },
         {
           "time": "9:30–10:15",
@@ -52,25 +52,25 @@
         },
         {
           "time": "2:30–3:45",
-          "title": "Human AI Lab",
+          "title": "Human AI Lab: Engage a Bot in Socratic Dialogue",
           "type": "creative-lab",
-          "description": ""
+          "description": "Morgan Harris from Choate Rosemary Hall will lead this first session, building off the morning's discussion of The Phaedrus."
         },
         {
           "time": "4:00–5:30",
-          "title": "Field Trip",
+          "title": "Field Trip to Vintage Radio and Communications Museum of Connecticut",
           "type": "community",
           "description": ""
         },
         {
           "time": "6:30",
-          "title": "Dinner",
+          "title": "Dinner at Beer Garden @ Bart's Drive-in Restaurant",
           "type": "break",
           "description": ""
         },
         {
           "time": "Evening",
-          "title": "Campfire (weather permitting)",
+          "title": "Campfire (weather permitting) on Loomis Chaffee Campus",
           "type": "community",
           "description": ""
         }
@@ -82,6 +82,12 @@
       "fullDate": "Tuesday, June 16",
       "subtitle": "Day Two",
       "events": [
+        {
+          "time": "8:30–9:00",
+          "title": "Arrival and light breakfast",
+          "type": "community",
+          "description": "We'll have coffee, pastries, and fruit available."
+        },
         {
           "time": "9:00–10:30",
           "title": "al-Khwarizmi – from The Algebra",
@@ -102,9 +108,9 @@
         },
         {
           "time": "2:00–3:30",
-          "title": "Human AI Lab",
+          "title": "Human AI Lab: Ted Nelson and CAI",
           "type": "creative-lab",
-          "description": "A human-centered, creative laboratory approach to AI."
+          "description": "We'll discuss Nelson's thoughts on education and then 'vibe-code' our own teaching tools to see if they hold up against Nelson's principles."
         },
         {
           "time": "4:00–5:00",
@@ -114,7 +120,7 @@
         },
         {
           "time": "6:30",
-          "title": "Dinner",
+          "title": "Dinner at Tulsi in Windsor Center",
           "type": "break",
           "description": ""
         },
@@ -132,6 +138,12 @@
       "fullDate": "Wednesday, June 17",
       "subtitle": "Day Three",
       "events": [
+        {
+          "time": "8:30–9:00",
+          "title": "Arrival and light breakfast",
+          "type": "community",
+          "description": "We'll have coffee, pastries, and fruit available."
+        },
         {
           "time": "9:00–10:30",
           "title": "Wittgenstein – from Philosophical Investigations",
@@ -166,7 +178,7 @@
           "time": "5:30",
           "title": "Dinner and Celebration",
           "type": "community",
-          "description": "A closing dinner to celebrate our time together."
+          "description": "A closing catered dinner to celebrate our time together. Mediterrenean buffet and presentations."
         }
       ]
     },

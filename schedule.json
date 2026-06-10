@@ -62,13 +62,13 @@
           "description": "Morgan Harris from Choate Rosemary Hall will lead this first session, building off the morning's discussion of The Phaedrus."
         },
         {
-          "time": "4:00–5:30",
+          "time": "4:00–5:15",
           "title": "Field Trip to Vintage Radio and Communications Museum of Connecticut",
           "type": "community",
           "description": ""
         },
         {
-          "time": "6:30",
+          "time": "5:30",
           "title": "Dinner at Beer Garden @ Bart's Drive-in Restaurant",
           "type": "break",
           "description": ""
@@ -105,9 +105,9 @@
         },
         {
           "time": "11:00–12:30",
-          "title": "Writing-Based Teaching",
+          "title": "Why Write?",
           "type": "writing",
-          "description": ""
+          "description": "Writing-Based Teaching"
         },
         {
           "time": "12:30–2:00",
@@ -128,13 +128,13 @@
           "description": ""
         },
         {
-          "time": "6:30",
+          "time": "5:30",
           "title": "Dinner at Tulsi in Windsor Center",
           "type": "break",
           "description": ""
         },
         {
-          "time": "Evening",
+          "time": "7:00",
           "title": "Movie Screening: Eno",
           "type": "community",
           "description": ""
@@ -165,7 +165,7 @@
         },
         {
           "time": "11:00–12:30",
-          "title": "Writing-Based Teaching",
+          "title": "Beyond the Academic Essay",
           "type": "writing",
           "description": ""
         },

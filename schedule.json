@@ -178,7 +178,10 @@
           "time": "11:00–12:30",
           "title": "Beyond the Academic Essay",
           "type": "writing",
-          "description": ""
+          "description": "",
+          "downloads": [
+            { "label": "Shields — Memory (from Reality Hunger)", "file": "Memory%20from%20Reality%20Hunger.pdf" }
+          ]
         },
         {
           "time": "12:30–2:00",

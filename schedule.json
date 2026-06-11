@@ -24,19 +24,21 @@
           "time": "9:00–9:30",
           "title": "Registration",
           "type": "community",
+          "location": "Founder's Lounge, Founder's Hall",
           "description": "We'll meet in Founder's Hall to get oriented. We will have light pastriest, coffee and tea, and fruit."
         },
         {
           "time": "9:30–10:15",
           "title": "Welcome & Introductions",
           "type": "plenary",
+          "location": "Founder's Lounge, Founder's Hall",
           "description": ""
         },
         {
           "time": "10:30–12:00",
           "title": "Plato – The Phaedrus",
           "type": "great-books",
-          "location": "",
+          "location": "Founder's Lounge, Founder's Hall",
           "description": "",
           "downloads": [
             { "label": "Cobb Translation", "file": "Phaedrus%20(Plato%2C%20Cobb)%20shorter.pdf" },
@@ -51,15 +53,21 @@
         },
         {
           "time": "1:00–2:15",
-          "title": "Writing-Based Teaching",
+          "title": "Writing-Based Teaching: Why Write?",
           "type": "writing",
-          "description": ""
+          "description": "",
+          "downloads": [
+            { "label": "Auster — Why Write?", "file": "Auster%20Why%20Write%20copy.pdf" }
+          ]
         },
         {
           "time": "2:30–3:45",
           "title": "Human AI Lab: Engage a Bot in Socratic Dialogue",
           "type": "creative-lab",
-          "description": "Morgan Harris from Choate Rosemary Hall will lead this first session, building off the morning's discussion of The Phaedrus."
+          "description": "Morgan Harris from Choate Rosemary Hall will lead this first session, building off the morning's discussion of The Phaedrus.",
+          "downloads": [
+            { "label": "Pirsig — Zen and the Art (Ch. 25)", "file": "Zen%20and%20the%20Art%20Chapter%2025.pdf" }
+          ]
         },
         {
           "time": "4:00–5:15",
@@ -119,7 +127,10 @@
           "time": "2:00–3:30",
           "title": "Human AI Lab: Ted Nelson and CAI",
           "type": "creative-lab",
-          "description": "We'll discuss Nelson's thoughts on education and then 'vibe-code' our own teaching tools to see if they hold up against Nelson's principles."
+          "description": "We'll discuss Nelson's thoughts on education and then 'vibe-code' our own teaching tools to see if they hold up against Nelson's principles.",
+          "downloads": [
+            { "label": "Nelson — Computer Lib / Dream Machines (pp. 8–16)", "file": "NMR%2021%20Nelson.pdf" }
+          ]
         },
         {
           "time": "4:00–5:00",

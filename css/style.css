@@ -321,10 +321,11 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.85rem); }
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  line-height: 1;
+  line-height: 1.2;
   transition: var(--transition);
   cursor: pointer;
   border: 2px solid transparent;
+  overflow: visible;
 }
 .btn--primary {
   background: var(--navy);
@@ -508,6 +509,45 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.85rem); }
 }
 .resource-card h3 { font-size: 1.4rem; color: var(--navy); }
 .resource-card p  { color: var(--text-muted); flex: 1; line-height: 1.72; }
+
+/* === Map Legend === */
+.map-legend { display: flex; flex-direction: column; gap: 1.25rem; margin: 1.5rem 0 2rem; }
+.map-legend-item { display: flex; align-items: flex-start; gap: 1rem; }
+.map-swatch { width: 1rem; height: 1rem; border-radius: 3px; flex-shrink: 0; margin-top: 0.25rem; }
+.map-swatch--purple { background: #7B4FAB; }
+.map-swatch--yellow { background: #D4A51A; border: 1px solid rgba(0,0,0,0.12); }
+.map-swatch--blue   { background: #3A7DAE; }
+.map-legend-item strong { display: block; color: var(--text); font-size: 0.9rem; font-weight: 700; margin-bottom: 0.15rem; }
+.map-legend-item p { font-size: 0.84rem; color: var(--text-muted); margin: 0 !important; line-height: 1.55; }
+
+/* === Institution & Resource Links === */
+.institution-list,
+.resource-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.institution-list li,
+.resource-links-list li {
+  border-bottom: 1px solid var(--cream-dark);
+  padding: 0.55rem 0;
+}
+.institution-list li:last-child,
+.resource-links-list li:last-child { border-bottom: none; }
+.institution-list a,
+.resource-links-list a {
+  color: var(--navy);
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: var(--transition);
+  line-height: 1.45;
+}
+.institution-list a:hover,
+.resource-links-list a:hover { color: var(--burgundy); }
 
 /* === While You're Here === */
 .logistics-grid { display: flex; flex-direction: column; gap: 0; }

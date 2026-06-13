@@ -21,6 +21,12 @@
       "subtitle": "Day One",
       "events": [
         {
+          "time": "8:45",
+          "title": "Hotel Shuttle Pickup",
+          "type": "logistics",
+          "description": "Look out for a Loomis Chaffee vehicle at the Marriott. Questions? Call or text Matt (609) 439-7160 or John (413) 854-7764."
+        },
+        {
           "time": "9:00–9:30",
           "title": "Registration",
           "type": "community",
@@ -100,6 +106,12 @@
       "subtitle": "Day Two",
       "events": [
         {
+          "time": "8:15",
+          "title": "Hotel Shuttle Pickup",
+          "type": "logistics",
+          "description": "Look out for a Loomis Chaffee vehicle at the Marriott. Questions? Call or text Matt (609) 439-7160 or John (413) 854-7764."
+        },
+        {
           "time": "8:30–9:00",
           "title": "Arrival and light breakfast",
           "type": "community",
@@ -169,6 +181,12 @@
       "fullDate": "Wednesday, June 17",
       "subtitle": "Day Three",
       "events": [
+        {
+          "time": "8:15",
+          "title": "Hotel Shuttle Pickup",
+          "type": "logistics",
+          "description": "Look out for a Loomis Chaffee vehicle at the Marriott. Questions? Call or text Matt (609) 439-7160 or John (413) 854-7764."
+        },
         {
           "time": "8:30–9:00",
           "title": "Arrival and light breakfast",

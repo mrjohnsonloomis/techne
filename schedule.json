@@ -25,7 +25,7 @@
           "title": "Registration",
           "type": "community",
           "location": "Founder's Lounge, Founder's Hall",
-          "description": "We'll meet in Founder's Hall to get oriented. We will have light pastriest, coffee and tea, and fruit."
+          "description": "We'll meet in Founder's Hall to get oriented. We will have light pastries, coffee and tea, and fruit."
         },
         {
           "time": "9:30–10:15",
@@ -49,12 +49,14 @@
           "time": "12:00–1:00",
           "title": "Lunch & Reading",
           "type": "break",
+          "location": "Parton Room, Scanlan Campus Center",
           "description": "Lunch provided by Loomis Chaffee."
         },
         {
           "time": "1:00–2:15",
           "title": "Writing-Based Teaching: Why Write?",
           "type": "writing",
+          "location": "Writing Studio, Katharine Brush Library",
           "description": "",
           "downloads": [
             { "label": "Auster — Why Write?", "file": "Auster%20Why%20Write%20copy.pdf" }
@@ -64,6 +66,7 @@
           "time": "2:30–3:45",
           "title": "Human AI Lab: Engage a Bot in Socratic Dialogue",
           "type": "creative-lab",
+          "location": "Founder's Lounge, Founder's Hall",
           "description": "Morgan Harris from Choate Rosemary Hall will lead this first session, building off the morning's discussion of The Phaedrus.",
           "downloads": [
             { "label": "Pirsig — Zen and the Art (Ch. 25)", "file": "Zen%20and%20the%20Art%20Chapter%2025.pdf" }
@@ -105,7 +108,7 @@
           "time": "9:00–10:30",
           "title": "al-Khwarizmi – from The Algebra",
           "type": "great-books",
-          "location": "",
+          "location": "Founder's Lounge, Founder's Hall",
           "description": "",
           "downloads": [
             { "label": "Download PDF", "file": "al-Khwarizmi%20from%20The%20Algebra.pdf" }
@@ -115,18 +118,21 @@
           "time": "11:00–12:30",
           "title": "Why Write?",
           "type": "writing",
+          "location": "Writing Studio, Katharine Brush Library",
           "description": "Writing-Based Teaching"
         },
         {
           "time": "12:30–2:00",
           "title": "Lunch & Reading",
           "type": "break",
+          "location": "Parton Room, Scanlan Campus Center",
           "description": "Lunch by Loomis Chaffee."
         },
         {
           "time": "2:00–3:30",
           "title": "Human AI Lab: Ted Nelson and CAI",
           "type": "creative-lab",
+          "location": "Founder's Lounge, Founder's Hall",
           "description": "We'll discuss Nelson's thoughts on education and then 'vibe-code' our own teaching tools to see if they hold up against Nelson's principles.",
           "downloads": [
             { "label": "Nelson — Computer Lib / Dream Machines (pp. 8–16)", "file": "NMR%2021%20Nelson.pdf" }
@@ -148,6 +154,7 @@
           "time": "7:00",
           "title": "Movie Screening: Eno",
           "type": "community",
+          "location": "NEO Theatre",
           "description": ""
         }
       ]
@@ -168,7 +175,7 @@
           "time": "9:00–10:30",
           "title": "Wittgenstein – from Philosophical Investigations",
           "type": "great-books",
-          "location": "",
+          "location": "Founder's Lounge, Founder's Hall",
           "description": "",
           "downloads": [
             { "label": "Download PDF", "file": "Wittgenstein%2C%20Philosophical%20Investigations%201-43.pdf" }
@@ -178,6 +185,7 @@
           "time": "11:00–12:30",
           "title": "Beyond the Academic Essay",
           "type": "writing",
+          "location": "Writing Studio, Katharine Brush Library",
           "description": "",
           "downloads": [
             { "label": "Shields — Memory (from Reality Hunger)", "file": "Memory%20from%20Reality%20Hunger.pdf" }
@@ -187,12 +195,14 @@
           "time": "12:30–2:00",
           "title": "Lunch & Reading",
           "type": "break",
+          "location": "Parton Room, Scanlan Campus Center",
           "description": "Lunch provided by Loomis Chaffee."
         },
         {
           "time": "2:00–3:30",
           "title": "Human AI Lab",
           "type": "creative-lab",
+          "location": "Founder's Lounge, Founder's Hall",
           "description": ""
         },
         {
@@ -205,7 +215,8 @@
           "time": "5:30",
           "title": "Dinner and Celebration",
           "type": "community",
-          "description": "A closing catered dinner to celebrate our time together. Mediterrenean buffet and presentations."
+          "location": "Founder's Lounge, Founder's Hall",
+          "description": "A closing catered dinner to celebrate our time together. Mediterranean buffet and presentations."
         }
       ]
     },

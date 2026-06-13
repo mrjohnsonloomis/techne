@@ -509,6 +509,21 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.85rem); }
 }
 .resource-card h3 { font-size: 1.4rem; color: var(--navy); }
 .resource-card p  { color: var(--text-muted); flex: 1; line-height: 1.72; }
+.resource-card--wide { grid-column: 1 / -1; }
+
+.prereading-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.prereading-text { display: flex; flex-direction: column; gap: 0.75rem; }
+.prereading-author { font-weight: 600; color: var(--text); font-size: 0.95rem; margin: 0; }
+.prereading-downloads { display: flex; flex-direction: column; gap: 0.5rem; }
+.prereading-note { font-size: 0.8rem; color: var(--text-muted); line-height: 1.55; margin: 0; }
+
+@media (max-width: 720px) {
+  .prereading-grid { grid-template-columns: 1fr; }
+}
 
 /* === Map Legend === */
 .map-legend { display: flex; flex-direction: column; gap: 1.25rem; margin: 1.5rem 0 2rem; }

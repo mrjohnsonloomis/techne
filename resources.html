@@ -52,29 +52,42 @@
 
       <div class="resources-grid">
 
-        <div class="resource-card">
-          <div class="resource-icon">📜</div>
-          <h3>Pre-Reading</h3>
-          <p>Please read these three texts before arriving. PDFs are provided below.</p>
-
-          <p style="margin-bottom: 0.25rem;"><strong>Plato – <em>The Phaedrus</em></strong></p>
-          <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 0.5rem;">
-            <a href="Phaedrus%20(Plato%2C%20Cobb)%20shorter.pdf" download class="btn btn--primary">Download — Cobb Translation</a>
-            <a href="Phaedrus%20(Plato%2C%20Nehamas)%20shorter.pdf" download class="btn btn--primary">Download — Nehamas Translation</a>
+        <!-- Pre-Reading: full-width spanning card -->
+        <div class="resource-card resource-card--wide">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem;">
+            <div class="resource-icon">📜</div>
+            <h3 style="margin: 0;">Pre-Reading</h3>
           </div>
-          <p style="font-size: 0.875rem; color: var(--color-text-muted, #666); margin-bottom: 1.25rem;">Other recommended translations: Christopher Rowe (Penguin, 2005) and James H. Nichols (Cornell University Press, 1998).</p>
+          <p style="margin-bottom: 1.75rem;">Please read these three texts before arriving. PDFs are provided below.</p>
+          <div class="prereading-grid">
 
-          <p style="margin-bottom: 0.25rem;"><strong>al-Khwarizmi – <em>from The Algebra</em></strong></p>
-          <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.25rem;">
-            <a href="al-Khwarizmi%20from%20The%20Algebra.pdf" download class="btn btn--primary">Download PDF</a>
-          </div>
+            <div class="prereading-text">
+              <p class="prereading-author">Plato – <em>The Phaedrus</em></p>
+              <div class="prereading-downloads">
+                <a href="Phaedrus%20(Plato%2C%20Cobb)%20shorter.pdf" download class="btn btn--primary">Download — Cobb Translation</a>
+                <a href="Phaedrus%20(Plato%2C%20Nehamas)%20shorter.pdf" download class="btn btn--primary">Download — Nehamas Translation</a>
+              </div>
+              <p class="prereading-note">Other recommended translations: Christopher Rowe (Penguin, 2005) and James H. Nichols (Cornell University Press, 1998).</p>
+            </div>
 
-          <p style="margin-bottom: 0.25rem;"><strong>Wittgenstein – <em>from Philosophical Investigations</em></strong></p>
-          <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-            <a href="Wittgenstein%2C%20Philosophical%20Investigations%201-43.pdf" download class="btn btn--primary">Download PDF</a>
+            <div class="prereading-text">
+              <p class="prereading-author">al-Khwarizmi – <em>from The Algebra</em></p>
+              <div class="prereading-downloads">
+                <a href="al-Khwarizmi%20from%20The%20Algebra.pdf" download class="btn btn--primary">Download PDF</a>
+              </div>
+            </div>
+
+            <div class="prereading-text">
+              <p class="prereading-author">Wittgenstein – <em>from Philosophical Investigations</em></p>
+              <div class="prereading-downloads">
+                <a href="Wittgenstein%2C%20Philosophical%20Investigations%201-43.pdf" download class="btn btn--primary">Download PDF</a>
+              </div>
+            </div>
+
           </div>
         </div>
 
+        <!-- Four equal cards -->
         <div class="resource-card">
           <div class="resource-icon">📖</div>
           <h3>Course Reader</h3>

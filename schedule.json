@@ -54,12 +54,13 @@
         },
         {
           "time": "1:00–2:15",
-          "title": "Writing-Based Teaching: Why Write?",
+          "title": "Writing &/as Technology",
           "type": "writing",
           "location": "Writing Studio, Katharine Brush Library",
           "description": "",
           "downloads": [
-            { "label": "Auster — Why Write?", "file": "Auster%20Why%20Write%20copy.pdf" }
+            { "label": "Dillard — from The Writing Life", "file": "Annie%20Dillard%20from%20The%20Writing%20Life.pdf" },
+            { "label": "Gay — Writing by Hand", "file": "Writing%20by%20Hand%20Ross%20Gay.pdf" }
           ]
         },
         {
@@ -119,7 +120,10 @@
           "title": "Why Write?",
           "type": "writing",
           "location": "Writing Studio, Katharine Brush Library",
-          "description": "Writing-Based Teaching"
+          "description": "Writing-Based Teaching",
+          "downloads": [
+            { "label": "Auster — Why Write?", "file": "Auster%20Why%20Write%20copy.pdf" }
+          ]
         },
         {
           "time": "12:30–2:00",

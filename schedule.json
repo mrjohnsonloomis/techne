@@ -151,7 +151,8 @@
           "location": "Founder's Lounge, Founder's Hall",
           "description": "We'll discuss Nelson's thoughts on education and then 'vibe-code' our own teaching tools to see if they hold up against Nelson's principles.",
           "downloads": [
-            { "label": "Nelson — Computer Lib / Dream Machines (pp. 8–16)", "file": "NMR%2021%20Nelson.pdf" }
+            { "label": "Nelson — Computer Lib / Dream Machines (pp. 8–16)", "file": "NMR%2021%20Nelson.pdf" },
+            { "label": "Field Guide to a Wonderful Place", "file": "field-guide-wonderful-place.html" }
           ]
         },
         {

@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Field Guide to a Wonderful Place | Techne &amp; Teaching: Critical Literacies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy:        #1B2A4A;
+      --navy-dark:   #111C33;
+      --navy-light:  #2C3E6A;
+      --burgundy:    #8B2E2E;
+      --green:       #3D6B4F;
+      --gold:        #C4922A;
+      --gold-light:  #D4A84B;
+      --cream:       #F7F4EF;
+      --cream-dark:  #EDE8E0;
+      --white:       #FFFFFF;
+      --text:        #2C2C2C;
+      --text-muted:  #6B6B6B;
+
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans:  'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
+      --font-mono:  ui-monospace, SFMono-Regular, Menlo, Consolas, 'Courier New', monospace;
+
+      --radius:    4px;
+      --radius-lg: 14px;
+      --shadow:    0 4px 24px rgba(0,0,0,0.10);
+      --shadow-lg: 0 8px 48px rgba(0,0,0,0.18);
+      --transition: all 0.28s ease;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-sans);
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.72;
+      font-size: 16px;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; text-decoration: none; transition: color 0.2s; }
+    :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+    h1, h2, h3, h4, h5 {
+      font-family: var(--font-serif);
+      line-height: 1.18;
+      font-weight: 600;
+    }
+    h1 { font-size: clamp(2.4rem, 5.5vw, 4.5rem); }
+    h2 { font-size: clamp(1.8rem, 3.2vw, 3rem); }
+    h3 { font-size: clamp(1.25rem, 2vw, 1.85rem); }
+
+    .eyebrow {
+      display: block;
+      font-family: var(--font-sans);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .lead {
+      font-size: 1.13rem;
+      line-height: 1.82;
+      color: var(--text-muted);
+      max-width: 66ch;
+    }
+
+    /* Nav */
+    .site-nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 200;
+      height: 64px;
+      background: rgba(17, 28, 51, 0.96);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(196, 146, 42, 0.22);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2.5rem;
+    }
+    .nav-brand {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--white);
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+    .nav-brand span { color: var(--gold); }
+    .nav-links {
+      display: flex;
+      gap: 2.25rem;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.75);
+      padding-bottom: 2px;
+      border-bottom: 2px solid transparent;
+      transition: var(--transition);
+    }
+    .nav-links a:hover,
+    .nav-links a.active { color: var(--gold); border-bottom-color: var(--gold); }
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 6px 4px;
+      background: none;
+      border: none;
+    }
+    .nav-toggle span {
+      display: block;
+      width: 24px; height: 2px;
+      background: var(--white);
+      transition: var(--transition);
+      border-radius: 2px;
+    }
+
+    /* Sections */
+    .section { padding: 5.5rem 0; }
+    .section--cream { background: var(--cream); }
+    .section--white { background: var(--white); }
+    .section--navy  { background: var(--navy); color: var(--white); }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 2.5rem;
+    }
+    .container--narrow {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 2.5rem;
+    }
+
+    .section-header { margin-bottom: 0; }
+    .section-header h2 { margin-top: 0.5rem; color: var(--navy); }
+    .section--navy .section-header h2 { color: var(--white); }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.8rem 1.6rem;
+      border-radius: var(--radius);
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      line-height: 1.2;
+      transition: var(--transition);
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
+    .btn--gold { background: var(--gold); color: var(--navy-dark); }
+    .btn--gold:hover { background: var(--gold-light); }
+    .btn--outline-light {
+      background: transparent;
+      border-color: rgba(255,255,255,0.45);
+      color: var(--white);
+    }
+    .btn--outline-light:hover { background: rgba(255,255,255,0.12); color: var(--white); }
+
+    /* Footer */
+    .site-footer {
+      background: var(--navy-dark);
+      color: rgba(255,255,255,0.55);
+      padding: 3rem 2.5rem;
+      text-align: center;
+    }
+    .site-footer h4 {
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      color: var(--white);
+      margin-bottom: 0.4rem;
+    }
+    .site-footer p { font-size: 0.84rem; }
+    .footer-divider {
+      width: 52px; height: 1px;
+      background: var(--gold);
+      opacity: 0.4;
+      margin: 1.5rem auto;
+    }
+
+    /* Header */
+    .lab-header {
+      background: linear-gradient(160deg, var(--navy) 0%, var(--navy-dark) 100%);
+      color: var(--white);
+      padding: 9.5rem 0 4.5rem;
+    }
+    .lab-header .eyebrow { color: var(--gold-light); margin-bottom: 0.85rem; }
+    .lab-header h1 { margin-bottom: 1.1rem; max-width: 16ch; }
+    .lab-meta {
+      margin-top: 2.25rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem 1.25rem;
+      align-items: center;
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.5);
+    }
+    .lab-meta .dot {
+      width: 4px; height: 4px; border-radius: 50%;
+      background: var(--gold);
+      display: inline-block;
+    }
+
+    /* Plain lists */
+    .plain-list {
+      margin-top: 2rem;
+      padding-left: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+    .plain-list li { font-size: 1.02rem; color: var(--text); line-height: 1.7; max-width: 64ch; }
+    .plain-list strong { color: var(--navy); }
+    .plain-list--muted li { color: var(--text-muted); }
+    .plain-list--light li { color: rgba(255,255,255,0.85); }
+
+    /* Two philosophies */
+    .philosophy { max-width: 640px; margin-top: 2.25rem; }
+    .philosophy-switch {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .philosophy-switch .ph-label {
+      font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--text-muted);
+      transition: color 0.25s ease;
+    }
+    .philosophy-switch .ph-label.is-active { color: var(--navy); }
+    .ph-toggle {
+      position: relative;
+      width: 52px; height: 28px;
+      background: var(--cream-dark);
+      border: 2px solid var(--cream-dark);
+      border-radius: 999px;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+    .ph-toggle .ph-knob {
+      position: absolute; top: 2px; left: 2px;
+      width: 20px; height: 20px; border-radius: 50%;
+      background: var(--burgundy);
+      transition: transform 0.25s ease, background 0.25s ease;
+    }
+    .ph-toggle.is-wonderful .ph-knob {
+      transform: translateX(22px);
+      background: var(--gold);
+    }
+    .prompt-box {
+      font-family: var(--font-mono);
+      font-size: 0.92rem;
+      line-height: 1.8;
+      background: var(--cream-dark);
+      border-radius: var(--radius);
+      padding: 1.5rem 1.75rem;
+    }
+
+    /* Build menu */
+    .build-card {
+      margin-top: 2.5rem;
+      background: var(--navy);
+      color: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 3rem;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      overflow: hidden;
+    }
+    .build-card::before {
+      content: "";
+      position: absolute;
+      top: -45%; right: -12%;
+      width: 380px; height: 380px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(196,146,42,0.18), transparent 70%);
+      pointer-events: none;
+    }
+    .build-card .build-kicker { color: var(--gold-light); margin-bottom: 0.5rem; }
+    .build-card h2 { color: var(--white); margin-bottom: 0.75rem; }
+    .build-card > p {
+      color: rgba(255,255,255,0.7);
+      max-width: 56ch;
+      margin-bottom: 2.25rem;
+      position: relative; z-index: 1;
+    }
+    .build-form {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr auto auto;
+      gap: 1rem;
+      align-items: end;
+      margin-bottom: 1.75rem;
+      position: relative; z-index: 1;
+    }
+    .build-field label {
+      display: block;
+      font-size: 0.7rem; font-weight: 700; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--gold-light);
+      margin-bottom: 0.55rem;
+    }
+    .build-field select, .build-field input {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.24);
+      border-radius: var(--radius);
+      color: var(--white);
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+    }
+    .build-field select option { color: var(--text); }
+    .build-field input::placeholder { color: rgba(255,255,255,0.4); }
+    .build-field select:focus, .build-field input:focus {
+      outline: 2px solid var(--gold); outline-offset: 2px;
+    }
+    .build-gloss {
+      font-size: 0.86rem; font-style: italic;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 1.75rem; min-height: 1.4em;
+      position: relative; z-index: 1;
+    }
+    .build-output {
+      background: var(--cream);
+      color: var(--text);
+      border-radius: var(--radius);
+      padding: 2.25rem; padding-top: 2.5rem;
+      font-family: var(--font-mono);
+      font-size: 0.96rem; line-height: 1.85;
+      position: relative; z-index: 1;
+      min-height: 120px;
+    }
+    .build-output .index-tab {
+      position: absolute; top: -11px; left: 2rem;
+      background: var(--gold);
+      color: var(--navy-dark);
+      font-family: var(--font-sans);
+      font-size: 0.66rem; font-weight: 700; letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 0.32rem 0.85rem;
+      border-radius: 3px 3px 0 0;
+    }
+    .build-output-text { white-space: pre-wrap; }
+    .build-actions {
+      display: flex; gap: 0.75rem;
+      margin-top: 1.5rem; flex-wrap: wrap;
+      position: relative; z-index: 1;
+    }
+    .copy-feedback {
+      font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--gold-light); align-self: center;
+      opacity: 0; transition: opacity 0.25s ease;
+    }
+    .copy-feedback.is-visible { opacity: 1; }
+
+    /* Reveal */
+    .reveal {
+      opacity: 0; transform: translateY(14px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.is-in { opacity: 1; transform: translateY(0); }
+    @media (prefers-reduced-motion: reduce) {
+      .reveal { transition: none; opacity: 1; transform: none; }
+    }
+
+    /* Responsive */
+    @media (max-width: 860px) {
+      .build-form { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 64px; left: 0; right: 0;
+        background: var(--navy-dark);
+        flex-direction: column;
+        padding: 0.75rem 2rem 1.5rem;
+        gap: 0;
+        border-top: 1px solid rgba(255,255,255,0.08);
+      }
+      .nav-links.open { display: flex; }
+      .nav-links li { border-bottom: 1px solid rgba(255,255,255,0.06); }
+      .nav-links a { display: block; padding: 0.85rem 0; border-bottom: none; }
+      .nav-toggle { display: flex; }
+      .section { padding: 3.5rem 0; }
+      .lab-header { padding: 7.5rem 0 3.5rem; }
+    }
+    @media (max-width: 560px) {
+      .build-card { padding: 2rem; }
+      .build-form { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="home.html" class="nav-brand">Techne <span>&amp;</span> Teaching</a>
+    <button class="nav-toggle" aria-label="Toggle menu" id="navToggle">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="schedule.html">Schedule</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="campus-map.html">Campus Map</a></li>
+      <li><a href="while-youre-here.html">While You're Here</a></li>
+    </ul>
+  </nav>
+
+  <header class="lab-header">
+    <div class="container--narrow">
+      <span class="eyebrow">Human AI Lab &middot; Session II</span>
+      <h1>Field Guide to a Wonderful Place</h1>
+      <p class="lead" style="color: rgba(255,255,255,0.78);">In 1974, Ted Nelson argued against the kind of computer teaching everyone was about to build, and proposed something else instead. Today we build the something else.</p>
+      <div class="lab-meta">
+        <span>Tuesday &middot; 2:00&ndash;3:30</span>
+        <span class="dot"></span>
+        <span>Nelson, <em style="font-style:italic;">Computer Lib / Dream Machines</em> (1974)</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Where We Are -->
+  <section class="section section--cream">
+    <div class="container--narrow">
+      <div class="section-header reveal">
+        <span class="eyebrow">Where We Are</span>
+        <h2>From Algorithm to Argument</h2>
+        <p class="lead" style="margin-top:1rem;">This morning's reading gave us the algorithm: al-Khwarizmi's procedure, the fixed sequence of steps. Nelson's target, in 1974, was that same logic applied to teaching: a system that breaks a subject into items, sequences them, and dresses the result up as conversation. He called it unnecessary, unscientific, and quietly cruel, and then proposed something else. Fifty years later, we have machines that genuinely talk back. This session asks what Nelson's alternative looks like now, and tries to build a piece of it.</p>
+      </div>
+      <ul class="plain-list reveal">
+        <li><strong>Read</strong> (15 min): four short passages from Nelson, read aloud.</li>
+        <li><strong>Ask</strong> (10 min): one question, before we touch anything.</li>
+        <li><strong>Build</strong> (50 min): pick something you teach and build a place for it.</li>
+        <li><strong>Share</strong> (15 min): one thing each.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Four Passages -->
+  <section class="section section--white">
+    <div class="container--narrow">
+      <div class="section-header reveal">
+        <span class="eyebrow">Read Aloud</span>
+        <h2>Four Passages</h2>
+        <p class="lead" style="margin-top:1rem;">Follow along in your reader as we read these four passages aloud, in order.</p>
+      </div>
+      <ul class="plain-list plain-list--muted reveal">
+        <li>p. 29 &mdash; "Some premises relevant to teaching"</li>
+        <li>p. 30 &mdash; "The computer is as inhuman as we make it..." through "...but why not?"</li>
+        <li>p. 31 &mdash; "CAI: Unnecessary Complication" through "...not likely to foster enthusiasm."</li>
+        <li>p. 33 &mdash; "The alternative is straightforward..." through "...selecting the most appropriate form of testing available."</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- The Question -->
+  <section class="section section--cream">
+    <div class="container--narrow">
+      <div class="section-header reveal">
+        <span class="eyebrow">Before We Build</span>
+        <h2>The Question</h2>
+        <p class="lead" style="margin-top:1rem;">Fifty years on, is a chatbot tutor the Now-Johnny machine Nelson was attacking, or the wonderful place he was imagining? What's the actual difference?</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Notes on Prompting -->
+  <section class="section section--white">
+    <div class="container--narrow">
+      <div class="section-header reveal">
+        <span class="eyebrow">Prompting</span>
+        <h2>Notes on Prompting</h2>
+        <p class="lead" style="margin-top:1rem;">A few things that might help as you describe a place rather than hand over a spec.</p>
+      </div>
+      <ul class="plain-list plain-list--muted reveal">
+        <li>Describe what you want the student to be able to do, see, and explore. The model can handle the code.</li>
+        <li>Get the overall shape working first, then add one feature at a time.</li>
+        <li>Look at what you get, describe in plain language what's wrong or missing, and ask for that change.</li>
+        <li>If the model suggests something you didn't ask for, try it before deciding whether to keep it.</li>
+        <li>Nelson wanted these things designed and edited by people, not programmed. That's still your job. The model is just doing the typing.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Two Philosophies -->
+  <section class="section section--cream">
+    <div class="container--narrow">
+      <div class="section-header reveal">
+        <span class="eyebrow">Same Subject, Two Prompts</span>
+        <h2>Item &amp; Sequence, or Wonderful Place</h2>
+        <p class="lead" style="margin-top:1rem;">The difference often shows up in the prompt itself, before any code is written.</p>
+      </div>
+      <div class="philosophy reveal">
+        <div class="philosophy-switch">
+          <span class="ph-label is-active" id="phLabelLeft">Item &amp; Sequence</span>
+          <button class="ph-toggle" id="phToggle" role="switch" aria-checked="false" aria-label="Toggle between prompts">
+            <span class="ph-knob"></span>
+          </button>
+          <span class="ph-label" id="phLabelRight">Wonderful Place</span>
+        </div>
+        <div class="prompt-box" id="promptBox">Build a quiz on the French Revolution. Ask ten multiple-choice questions about key dates, figures, and causes. Track the student's score, and tell them after each question whether they got it right.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Build Menu -->
+  <section class="section section--white">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Now Build</span>
+        <h2>Build Menu</h2>
+        <p class="lead" style="margin-top:1rem;">Pick a form from Nelson's catalog. Name something you teach. Get a starting prompt to rewrite or try as is.</p>
+      </div>
+      <div class="build-card reveal">
+        <span class="eyebrow build-kicker">From the Catalog, p. 33</span>
+        <h2>What do you want to build?</h2>
+        <p>Every form below is just a shape. The content is yours. Pick something you teach, or hit "Surprise me" if nothing comes to mind.</p>
+        <div class="build-form">
+          <div class="build-field">
+            <label for="buildForm">Form</label>
+            <select id="buildForm">
+              <option value="hypergram">Hypergram</option>
+              <option value="stretchtext">Stretchtext</option>
+              <option value="hypermap">Hypermap</option>
+              <option value="queriable">Queriable Illustration</option>
+              <option value="dissection">Dissection Screen</option>
+              <option value="hypercomic">Hyper-Comic</option>
+              <option value="wonderful">Open Wonderful Place</option>
+            </select>
+          </div>
+          <div class="build-field">
+            <label for="buildTopic">Something you teach</label>
+            <input type="text" id="buildTopic" placeholder="e.g. the rules of chess">
+          </div>
+          <div class="build-field">
+            <label>&nbsp;</label>
+            <button class="btn btn--outline-light" id="surpriseBtn" type="button">Surprise me</button>
+          </div>
+          <div class="build-field">
+            <label>&nbsp;</label>
+            <button class="btn btn--gold" id="generateBtn" type="button">Generate prompt</button>
+          </div>
+        </div>
+        <p class="build-gloss" id="buildGloss">An interactive diagram where moving one part changes the others.</p>
+        <div class="build-output">
+          <span class="index-tab">Starter Prompt</span>
+          <p class="build-output-text" id="buildOutput">Build an interactive diagram of [something you teach]. Let me grab and move one part of it, and have the related parts respond and change in real time. Keep it visual: I want to manipulate it, not read about it.</p>
+        </div>
+        <div class="build-actions">
+          <button class="btn btn--outline-light" id="copyBtn" type="button">Copy prompt</button>
+          <span class="copy-feedback" id="copyFeedback">Copied</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Share -->
+  <section class="section section--navy">
+    <div class="container--narrow">
+      <div class="section-header reveal">
+        <span class="eyebrow">When We Come Back</span>
+        <h2>One Thing Each</h2>
+        <p class="lead" style="margin-top:1rem; color: rgba(255,255,255,0.72);">Not the whole tour, just one thing: a screen, a moment, a surprise, or a failure worth keeping.</p>
+      </div>
+      <ul class="plain-list plain-list--light reveal">
+        <li>Who was in control, the student or the system?</li>
+        <li>Did it motivate, or would it bore?</li>
+        <li>Is this just Now-Johnny with better wallpaper, or something else?</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <h4>Techne &amp; Teaching: Critical Literacies</h4>
+    <p>June 15&ndash;18, 2025 &nbsp;&middot;&nbsp; Loomis Chaffee, Windsor, Connecticut</p>
+    <div class="footer-divider"></div>
+    <p>For questions, please contact the organizing team.</p>
+  </footer>
+
+  <script>
+    // Nav
+    document.getElementById('navToggle').addEventListener('click', function () {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+
+    // Reveal
+    var revealEls = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      var obs = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('is-in'); obs.unobserve(e.target); }
+        });
+      }, { threshold: 0.15 });
+      revealEls.forEach(function (el) { obs.observe(el); });
+    } else {
+      revealEls.forEach(function (el) { el.classList.add('is-in'); });
+    }
+
+    // Toggle
+    var phToggle = document.getElementById('phToggle');
+    var phLabelLeft = document.getElementById('phLabelLeft');
+    var phLabelRight = document.getElementById('phLabelRight');
+    var promptBox = document.getElementById('promptBox');
+    var prompts = {
+      sequence: "Build a quiz on the French Revolution. Ask ten multiple-choice questions about key dates, figures, and causes. Track the student's score, and tell them after each question whether they got it right.",
+      wonderful: "Build an explorable map of the French Revolution: people, events, ideas, and consequences, all connected to each other. Let the student start anywhere and follow whatever connection interests them. No score, no quiz, no required path."
+    };
+    phToggle.addEventListener('click', function () {
+      var w = phToggle.classList.toggle('is-wonderful');
+      phToggle.setAttribute('aria-checked', w ? 'true' : 'false');
+      phLabelLeft.classList.toggle('is-active', !w);
+      phLabelRight.classList.toggle('is-active', w);
+      promptBox.textContent = w ? prompts.wonderful : prompts.sequence;
+    });
+
+    // Build menu
+    var forms = {
+      hypergram:  { gloss: 'An interactive diagram where moving one part changes the others.', template: function(x){ return 'Build an interactive diagram of '+x+'. Let me grab and move one part of it, and have the related parts respond and change in real time. Keep it visual: I want to manipulate it, not read about it.'; } },
+      stretchtext:{ gloss: 'A passage that grows more detailed or simpler as you adjust it.', template: function(x){ return 'Build a short explanation of '+x+' with a slider. At one end, the explanation is a single plain sentence. As I move the slider, more detail and qualification gets added, without removing what is already there.'; } },
+      hypermap:   { gloss: 'A zoomable view where more detail appears as you zoom in.', template: function(x){ return 'Build a zoomable map of '+x+'. At the widest view, show only the broad outline. As I zoom in on any part, reveal more detail. Let me toggle different layers of information on and off.'; } },
+      queriable:  { gloss: 'A labeled diagram where clicking a label explains that part.', template: function(x){ return 'Build a labeled diagram of '+x+'. When I click on a label, show me a short explanation of that part. For at least one label, let the explanation open into its own diagram, one level deeper.'; } },
+      dissection: { gloss: 'A layered view you can take apart and put back together.', template: function(x){ return 'Build a layered view of '+x+' that I can peel back, one layer at a time, to see what is underneath. Let me put it back together again, and let me see all the layers at once if I want to.'; } },
+      hypercomic: { gloss: 'A branching strip where you choose what happens next.', template: function(x){ return 'Build a short comic strip, a few panels, about '+x+'. At certain panels, give me a choice of what happens next. Include at least one branch that leads somewhere genuinely surprising.'; } },
+      wonderful:  { gloss: 'No sequence, no score, no required path.', template: function(x){ return 'Build an explorable space about '+x+'. No fixed sequence, no scoring, no single correct path. Just a place a curious student could wander through, follow what interests them, and leave knowing more than when they arrived.'; } }
+    };
+    var surpriseTopics = ['the rules of chess','iambic pentameter','the water cycle','supply and demand','the Dewey Decimal System','the structure of a sonnet','the periodic table','the plot of Hamlet',"Newton's laws of motion",'the parts of a cell','the French Revolution','the rhetorical triangle'];
+
+    var buildFormEl = document.getElementById('buildForm');
+    var buildTopic  = document.getElementById('buildTopic');
+    var buildGloss  = document.getElementById('buildGloss');
+    var buildOutput = document.getElementById('buildOutput');
+    var copyFeedback = document.getElementById('copyFeedback');
+
+    function updateGloss() { buildGloss.textContent = forms[buildFormEl.value].gloss; }
+    function generatePrompt() {
+      var topic = buildTopic.value.trim() || '[something you teach]';
+      buildOutput.textContent = forms[buildFormEl.value].template(topic);
+      copyFeedback.classList.remove('is-visible');
+    }
+
+    buildFormEl.addEventListener('change', function () { updateGloss(); generatePrompt(); });
+    document.getElementById('generateBtn').addEventListener('click', generatePrompt);
+    buildTopic.addEventListener('keydown', function (e) { if (e.key === 'Enter') generatePrompt(); });
+    document.getElementById('surpriseBtn').addEventListener('click', function () {
+      buildTopic.value = surpriseTopics[Math.floor(Math.random() * surpriseTopics.length)];
+      generatePrompt();
+    });
+    document.getElementById('copyBtn').addEventListener('click', function () {
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(buildOutput.textContent).then(function () {
+          copyFeedback.classList.add('is-visible');
+          setTimeout(function () { copyFeedback.classList.remove('is-visible'); }, 1800);
+        });
+      }
+    });
+
+    updateGloss();
+  </script>
+</body>
+</html>

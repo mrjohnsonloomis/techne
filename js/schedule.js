@@ -45,7 +45,10 @@ function renderPanel(day) {
     var downloadsHtml = (ev.downloads && ev.downloads.length)
       ? '<div class="timeline-downloads">' +
           ev.downloads.map(function (d) {
-            return '<a href="' + d.file + '" download class="timeline-download-link">↓ ' + d.label + '</a>';
+            var isHtml = /\.html?($|\?)/i.test(d.file);
+            return isHtml
+              ? '<a href="' + d.file + '" target="_blank" rel="noopener noreferrer" class="timeline-download-link">↗ ' + d.label + '</a>'
+              : '<a href="' + d.file + '" download class="timeline-download-link">↓ ' + d.label + '</a>';
           }).join('') +
         '</div>'
       : '';
